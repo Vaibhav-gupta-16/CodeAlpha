@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #000000, #000000);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.calculator {
+    width: 340px;
+    background: linear-gradient(145deg, #3a3a3a, #292929);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.6), -10px -10px 20px rgba(255, 255, 255, 0.1);
+}
+
+.display-screen {
+    position: relative;
+    background: #ded3d3;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: inset -3px -3px 5px rgba(255, 255, 255, 0.1), inset 3px 3px 5px rgba(0, 0, 0, 0.4);
+}
+
+.display-screen input[type="text"] {
+    width: 100%;
+    height: 50px;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: right;
+    color: #00ffcc;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.calc-count {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #00ffcc;
+    z-index: 10;
+}
+
+.current-operator {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #00ffcc;
+    z-index: 10;
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+}
+
+button {
+    height: 65px;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+    transform: scale(0.95);
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.number {
+    background: #f0f0f0;
+    color: #333;
+}
+
+.number:hover {
+    background: #e0e0e0;
+}
+
+.operator {
+    background: #ff6f61;
+    color: #fff;
+}
+
+.operator:hover {
+    background: #ff4e3a;
+}
+
+#clear {
+    background: #e74c3c;
+}
+
+#clear:hover {
+    background: #c0392b;
+}
+
+#backspace {
+    background: #3498db;
+}
+
+#backspace:hover {
+    background: #2980b9;
+}
+
+#equals {
+    background: #2ecc71;
+    grid-column: span 2;
+}
+
+#equals:hover {
+    background: #27ae60;
+}
+
+#zero {
+    grid-column: span 2;
+}
+
+@media (max-width: 400px) {
+    .calculator {
+        width: 90%;
+    }
+
+    button {
+        height: 55px;
+        font-size: 18px;
+    }
+}
