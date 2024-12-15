@@ -4,30 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile & Image Gallery</title>
+    <title>Vaibhav's Image Gallery</title>
     <style>
         /* General Reset */
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: #0634bcd5;
+            background: #8690add5;
             color: #333;
         }
 
         /* Header Section */
         .header {
-            background: url('image1.jpg') center/cover no-repeat;
-            height: 200px;
-            color: white;
+            background: rgb(227, 226, 226);
+            height: 150px;
+            color: rgb(0, 0, 0);
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 20px 50px;
+            box-shadow: black 5px 5px 15px;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+
         }
 
         .header h1 {
             font-size: 2.8rem;
             margin: 0;
+            font-style: oblique;
+            font-weight: bold;
         }
 
         .profile-image {
@@ -63,7 +70,7 @@
 
         .gallery-item img {
             width: 100%;
-            height: 400px;
+            height: 100%;
             object-fit: cover;
             transition: transform 0.3s ease;
         }
@@ -150,42 +157,59 @@
     <!-- Header Section -->
     <div class="header">
         <h1>Vaibhav gupta</h1>
-        <img src="profile.jpg" alt="Profile" class="profile-image">
+        <h2>Explore with me !!!</h2>
+        <img src="./assets//images/profile.jpg" alt="Profile" class="profile-image">
     </div>
 
     <!-- Main Gallery Section -->
     <div class="container">
         <div class="gallery">
             <div class="gallery-item">
-                <img src="naruto.jpg" alt="Image 1">
+                <img src="./assets/images/bg1.jpg" alt="Image 1">
                 <button class="like-button" data-liked="false">&#x2661;</button>
             </div>
             <div class="gallery-item">
-                <img src="images.jpeg" alt="Image 2">
+                <img src="./assets/images/bg2.jpeg" alt="Image 2">
                 <button class="like-button" data-liked="false">&#x2661;</button>
             </div>
             <div class="gallery-item">
-                <img src="naruto.jpg" alt="Image 3">
+                <img src="./assets/images/bg3.jpg" alt="Image 3">
                 <button class="like-button" data-liked="false">&#x2661;</button>
             </div>
             <div class="gallery-item">
-                <img src="naruto.jpg" alt="Image 4">
+                <img src="./assets/images/bg4.jpeg" alt="Image 4">
                 <button class="like-button" data-liked="false">&#x2661;</button>
             </div>
             <div class="gallery-item">
-                <img src="naruto.jpg" alt="Image 1">
+                <img src="./assets/images/bg5.jpg" alt="Image 1">
                 <button class="like-button" data-liked="false">&#x2661;</button>
             </div>
             <div class="gallery-item">
-                <img src="naruto.jpg" alt="Image 2">
+                <img src="./assets/images/bg6.jpg" alt="Image 2">
                 <button class="like-button" data-liked="false">&#x2661;</button>
             </div>
             <div class="gallery-item">
-                <img src="naruto.jpg" alt="Image 3">
+                <img src="./assets/images/bg7.jpg" alt="Image 3">
                 <button class="like-button" data-liked="false">&#x2661;</button>
             </div>
             <div class="gallery-item">
-                <img src="naruto.jpg" alt="Image 4">
+                <img src="./assets/images/bg8.jpg" alt="Image 4">
+                <button class="like-button" data-liked="false">&#x2661;</button>
+            </div>
+            <div class="gallery-item">
+                <img src="./assets/images/bg9.jpg" alt="Image 4">
+                <button class="like-button" data-liked="false">&#x2661;</button>
+            </div>
+            <div class="gallery-item">
+                <img src="./assets/images/bg10.jpg" alt="Image 4">
+                <button class="like-button" data-liked="false">&#x2661;</button>
+            </div>
+            <div class="gallery-item">
+                <img src="./assets/images/bg11.jpg" alt="Image 4">
+                <button class="like-button" data-liked="false">&#x2661;</button>
+            </div>
+            <div class="gallery-item">
+                <img src="./assets/images/bg12.avif" alt="Image 4">
                 <button class="like-button" data-liked="false">&#x2661;</button>
             </div>
         </div>
